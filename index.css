@@ -1,0 +1,102 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+:root {
+	--web-view-ids: index;
+}
+#index * {
+	margin: 0;
+	padding: 0;
+}
+.index_Class {
+	position: absolute;
+	box-sizing: border-box;
+	background: #E5E5E5;
+	width: 800px;
+	height: 600px;
+	background-color: rgba(135,135,135,1);
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	opacity: 1;
+	--web-view-name: index;
+	--web-view-id: index;
+	--web-enable-deep-linking: true;
+}
+
+.Pauza {
+	border: 0;
+	border-radius: 25px;
+	opacity: 1;
+	position: absolute;
+	width: 129px;
+	height: 45px;
+	left: 143px;
+	top: 393px;
+	overflow: visible;
+	opacity: 1;
+	background-color: rgba(242,242,242,1);
+	color: rgba(135,135,135,1);
+	transform: matrix(1,0,0,1,0,0);
+	overflow: visible;
+	position: absolute;
+	top: 393px;
+	left: 143px;
+	width: 129px;
+	height: 45px;
+	font-family: Noto Sans;
+}
+
+.Logout {
+	border: 0;
+	border-radius:25px;
+	opacity: 1;
+	background-color: rgba(233,126,126,1);
+	color: #E5E5E5;
+	position: absolute;
+	overflow: visible;
+	width: 129px;
+	height: 45px;
+	left: 528px;
+	top: 393px;
+	font-family: Noto Sans;
+}
+
+.name {
+	opacity: 1;
+	position: absolute;
+	left: 269px;
+	top: 71px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+	width: 257px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Noto Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(242,242,242,1);
+}
+.clock {
+	
+	opacity: 1;
+	position: absolute;
+	left: 274px;
+	top: 187px;
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+	width: 199px;
+	white-space: nowrap;
+	text-align: center;
+	font-family: Noto Sans;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 50px;
+	color: rgba(242,242,242,1);
+}
