@@ -41,7 +41,6 @@ let x = setInterval(function () {
         clearInterval(x)
         document.getElementById('logout_button').disabled = false
     }
-
 }, 1000)
 
 document.getElementById('logout_button').onclick = function () {
