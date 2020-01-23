@@ -34,7 +34,7 @@ export default Vue.extend({
     source: String,
   },
   data: (): {
-    data: Object;
+    data: {};
     contorLoading: boolean;
     nrOfSeconds: number;
     intervalReference: Timeout | null;
@@ -49,9 +49,9 @@ export default Vue.extend({
   methods: {},
   computed: {
     contorDisplay(): string {
-      let hours = Math.floor(this.nrOfSeconds / 3600);
-      let minutes = Math.floor((this.nrOfSeconds - hours * 3600) / 60);
-      let seconds = this.nrOfSeconds - hours * 3600 - minutes * 60;
+      const hours = Math.floor(this.nrOfSeconds / 3600);
+      const minutes = Math.floor((this.nrOfSeconds - hours * 3600) / 60);
+      const seconds = this.nrOfSeconds - hours * 3600 - minutes * 60;
       return hours + ':' + minutes + ':' + seconds;
     },
   },
@@ -60,8 +60,8 @@ export default Vue.extend({
       this.data = data;
       this.contorLoading = false;
       this.nrOfSeconds = data.hours * 3600;
-      let that = this;
-      this.intervalReference = setInterval(function() {
+      const that = this;
+      this.intervalReference = setInterval(() => {
         that.nrOfSeconds--;
       }, 1000);
     });

@@ -83,7 +83,7 @@ ipcMain.on(
       password,
     };
     axios.post(url, data).then(response => {
-      if (response.data == '') {
+      if (response.data === '') {
         hasPassed = false;
       } else {
         hasPassed = true;
@@ -96,14 +96,14 @@ ipcMain.on(
   }
 );
 
-ipcMain.on('signup', (event: Electron.Event, signupData: Object) => {
+ipcMain.on('signup', (event: Electron.Event, signupData: {}) => {
   const url = 'http://codaloca.go.ro:3000/signup';
   let hasPassed: boolean;
 
   axios
     .post(url, signupData)
     .then(response => {
-      if (response.data == '') {
+      if (response.data === '') {
         hasPassed = false;
       } else {
         hasPassed = true;
